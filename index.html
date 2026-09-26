@@ -174,6 +174,706 @@
 
     .avatar {
       width: 150px;
-      height:
-```
+      height: 150px;
+      margin: auto auto 20px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 55px;
+      font-weight: 800;
+      color: white;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      border: 5px solid rgba(255,255,255,0.1);
+    }
 
+    .profile-card h3 {
+      font-size: 25px;
+      margin-bottom: 5px;
+    }
+
+    .profile-card p {
+      color: var(--muted);
+    }
+
+    .available {
+      margin-top: 20px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #a9e8c3;
+      font-size: 14px;
+    }
+
+    .dot {
+      width: 9px;
+      height: 9px;
+      background: #35d07f;
+      border-radius: 50%;
+    }
+
+    /* GENERAL */
+    section {
+      padding: 90px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .section-title span {
+      color: var(--primary);
+    }
+
+    .section-title p {
+      color: var(--muted);
+    }
+
+    /* ABOUT */
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about-text p {
+      color: var(--muted);
+      font-size: 17px;
+      margin-bottom: 18px;
+    }
+
+    .info-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .info {
+      padding: 22px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    .info strong {
+      display: block;
+      color: var(--primary);
+      margin-bottom: 5px;
+    }
+
+    .info span {
+      color: #d8e5ef;
+    }
+
+    /* SKILLS */
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 18px;
+    }
+
+    .skill {
+      padding: 25px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .skill:hover {
+      transform: translateY(-7px);
+      border-color: var(--primary);
+    }
+
+    .skill .icon {
+      font-size: 35px;
+      margin-bottom: 10px;
+    }
+
+    .skill h3 {
+      margin-bottom: 5px;
+    }
+
+    .skill p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* PROJECTS */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .project {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 30px;
+      transition: 0.3s;
+    }
+
+    .project:hover {
+      transform: translateY(-8px);
+      border-color: var(--primary);
+    }
+
+    .project-number {
+      color: var(--primary);
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .project h3 {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    .project p {
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .tech {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tech span {
+      font-size: 12px;
+      padding: 6px 10px;
+      border-radius: 20px;
+      background: rgba(41,163,163,0.12);
+      color: var(--primary);
+      border: 1px solid rgba(41,163,163,0.25);
+    }
+
+    /* EXPERIENCE */
+    .timeline {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .timeline-item {
+      padding: 25px 30px;
+      margin-bottom: 20px;
+      border-left: 3px solid var(--primary);
+      background: var(--card);
+      border-radius: 0 15px 15px 0;
+    }
+
+    .timeline-item h3 {
+      font-size: 22px;
+    }
+
+    .timeline-item .date {
+      color: var(--primary);
+      font-size: 14px;
+      margin: 5px 0 10px;
+    }
+
+    .timeline-item p {
+      color: var(--muted);
+    }
+
+    /* CONTACT */
+    .contact-container {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      padding: 50px;
+      border-radius: 20px;
+      background: var(--card);
+      border: 1px solid var(--border);
+    }
+
+    .contact-container p {
+      color: var(--muted);
+      margin: 15px auto 30px;
+      max-width: 600px;
+    }
+
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .contact-link {
+      padding: 12px 20px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .contact-link:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+
+    footer span {
+      color: var(--primary);
+    }
+
+    /* MOBILE */
+    @media (max-width: 850px) {
+      nav {
+        padding: 16px 5%;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        padding: 130px 5% 70px;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .buttons {
+        justify-content: center;
+      }
+
+      .profile-card {
+        width: 100%;
+        max-width: 330px;
+      }
+
+      section {
+        padding: 70px 5%;
+      }
+
+      .about {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .hero h1 {
+        font-size: 50px;
+      }
+
+      .hero h2 {
+        font-size: 22px;
+      }
+
+      .info-box {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-container {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="logo">P<span>C</span>.</div>
+
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+
+    <div class="hero-text">
+
+      <div class="tag">👋 Welcome to my portfolio</div>
+
+      <h1>
+        Hi, I'm <span>Prakash</span>
+      </h1>
+
+      <h2>Developer • UI/UX Enthusiast • Creative Learner</h2>
+
+      <p>
+        I'm a technology enthusiast interested in web development,
+        UI/UX design, software projects and creative digital experiences.
+        I enjoy turning ideas into useful and visually appealing products.
+      </p>
+
+      <div class="buttons">
+        <a href="#projects" class="btn primary-btn">View My Projects</a>
+        <a href="#contact" class="btn outline-btn">Contact Me</a>
+      </div>
+
+    </div>
+
+
+    <div class="profile-card">
+
+      <div class="avatar">PC</div>
+
+      <h3>Prakash Choudhary</h3>
+
+      <p>Student & Developer</p>
+
+      <div class="available">
+        <span class="dot"></span>
+        Open to opportunities
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+  <section id="about">
+
+    <div class="section-title">
+      <h2>About <span>Me</span></h2>
+      <p>A little bit about who I am</p>
+    </div>
+
+    <div class="about">
+
+      <div class="about-text">
+
+        <p>
+          I am a student with a strong interest in technology,
+          software development and creative digital solutions.
+          I like exploring new technologies and building projects
+          that solve practical problems.
+        </p>
+
+        <p>
+          My interests include web development, UI/UX design,
+          programming, product design, video editing and
+          entrepreneurship.
+        </p>
+
+        <p>
+          I believe in learning by building real projects and
+          continuously improving my technical and creative skills.
+        </p>
+
+      </div>
+
+
+      <div class="info-box">
+
+        <div class="info">
+          <strong>🎓 Education</strong>
+          <span>Engineering Student</span>
+        </div>
+
+        <div class="info">
+          <strong>💻 Focus</strong>
+          <span>Development & Design</span>
+        </div>
+
+        <div class="info">
+          <strong>📍 Location</strong>
+          <span>Mumbai, India</span>
+        </div>
+
+        <div class="info">
+          <strong>🚀 Interests</strong>
+          <span>Technology & Startups</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SKILLS -->
+  <section id="skills">
+
+    <div class="section-title">
+      <h2>My <span>Skills</span></h2>
+      <p>Technologies and areas I work with</p>
+    </div>
+
+    <div class="skills">
+
+      <div class="skill">
+        <div class="icon">🌐</div>
+        <h3>HTML & CSS</h3>
+        <p>Responsive web interfaces</p>
+      </div>
+
+      <div class="skill">
+        <div class="icon">⚡</div>
+        <h3>JavaScript</h3>
+        <p>Interactive web applications</p>
+      </div>
+
+      <div class="skill">
+        <div class="icon">⚛️</div>
+        <h3>React</h3>
+        <p>Modern frontend development</p>
+      </div>
+
+      <div class="skill">
+        <div class="icon">☕</div>
+        <h3>Java</h3>
+        <p>Programming & application development</p>
+      </div>
+
+      <div class="skill">
+        <div class="icon">🎨</div>
+        <h3>UI/UX</h3>
+        <p>Design and user experience</p>
+      </div>
+
+      <div class="skill">
+        <div class="icon">🗄️</div>
+        <h3>MongoDB</h3>
+        <p>Database management</p>
+      </div>
+
+      <div class="skill">
+        <div class="icon">🟢</div>
+        <h3>Node.js</h3>
+        <p>Backend development</p>
+      </div>
+
+      <div class="skill">
+        <div class="icon">🎬</div>
+        <h3>Video Editing</h3>
+        <p>Creative digital content</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PROJECTS -->
+  <section id="projects">
+
+    <div class="section-title">
+      <h2>Featured <span>Projects</span></h2>
+      <p>Some projects I've worked on</p>
+    </div>
+
+    <div class="projects">
+
+      <div class="project">
+
+        <div class="project-number">01 — WEB APPLICATION</div>
+
+        <h3>Personal Budget Manager</h3>
+
+        <p>
+          A personal finance management website designed to help
+          users track income, expenses, budgets and financial
+          activities through a simple interface.
+        </p>
+
+        <div class="tech">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+
+      </div>
+
+
+      <div class="project">
+
+        <div class="project-number">02 — HEALTHCARE</div>
+
+        <h3>VeCure</h3>
+
+        <p>
+          A healthcare coordination platform concept focused on
+          connecting patients and healthcare services involved
+          in organ transplant coordination.
+        </p>
+
+        <div class="tech">
+          <span>React</span>
+          <span>Vite</span>
+          <span>Tailwind</span>
+          <span>Node.js</span>
+          <span>MongoDB</span>
+        </div>
+
+      </div>
+
+
+      <div class="project">
+
+        <div class="project-number">03 — STARTUP</div>
+
+        <h3>FitFusion</h3>
+
+        <p>
+          A fitness-focused startup concept combining gym,
+          personal training and fitness products into a single
+          brand experience.
+        </p>
+
+        <div class="tech">
+          <span>Branding</span>
+          <span>Fitness</span>
+          <span>Marketing</span>
+          <span>UI/UX</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+
+    <div class="section-title">
+      <h2>My <span>Experience</span></h2>
+      <p>My professional learning journey</p>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+
+        <h3>Product Photography Intern</h3>
+
+        <div class="date">Internship</div>
+
+        <p>
+          Worked on product photography and creative content,
+          gaining practical experience in visual presentation,
+          product-focused content and digital media.
+        </p>
+
+      </div>
+
+
+      <div class="timeline-item">
+
+        <h3>Web Development Projects</h3>
+
+        <div class="date">Academic & Personal Projects</div>
+
+        <p>
+          Built and explored multiple web-based projects while
+          learning frontend development, backend technologies,
+          databases and responsive UI design.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+  <section id="contact">
+
+    <div class="section-title">
+      <h2>Let's <span>Connect</span></h2>
+      <p>Have a project, opportunity or idea?</p>
+    </div>
+
+    <div class="contact-container">
+
+      <h2>Let's build something together.</h2>
+
+      <p>
+        I'm always interested in learning, collaborating on
+        projects and exploring new opportunities in technology
+        and creative digital work.
+      </p>
+
+      <div class="contact-links">
+
+        <!-- Replace these with your real links -->
+
+        <a class="contact-link"
+           href="mailto:your-email@example.com">
+          📧 Email
+        </a>
+
+        <a class="contact-link"
+           href="https://github.com/"
+           target="_blank">
+          💻 GitHub
+        </a>
+
+        <a class="contact-link"
+           href="https://www.linkedin.com/"
+           target="_blank">
+          🔗 LinkedIn
+        </a>
+
+        <a class="contact-link"
+           href="https://www.instagram.com/"
+           target="_blank">
+          📸 Instagram
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <p>
+      © <span id="year"></span> Prakash Choudhary.
+      Built with HTML, CSS & JavaScript.
+    </p>
+
+  </footer>
+
+
+  <script>
+    // Automatically updates the copyright year
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
+```
