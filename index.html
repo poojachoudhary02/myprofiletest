@@ -1,1 +1,179 @@
-<h1> hello world</h1>
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal Portfolio of Prakash Choudhary" />
+  <title>Prakash Choudhary | Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --primary: #29a3a3;
+      --secondary: #0f4c81;
+      --dark: #08111f;
+      --dark2: #0d1b2a;
+      --text: #eaf4f4;
+      --muted: #9fb3c8;
+      --card: rgba(255, 255, 255, 0.07);
+      --border: rgba(255, 255, 255, 0.12);
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, var(--dark), var(--dark2));
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* NAVBAR */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(8, 17, 31, 0.88);
+      backdrop-filter: blur(15px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    .logo span {
+      color: white;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: #d8e5ef;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      padding: 140px 8% 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 60px;
+    }
+
+    .hero-text {
+      max-width: 700px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 8px 16px;
+      border: 1px solid rgba(41, 163, 163, 0.4);
+      border-radius: 30px;
+      color: var(--primary);
+      background: rgba(41, 163, 163, 0.08);
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(45px, 7vw, 82px);
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: var(--primary);
+    }
+
+    .hero h2 {
+      font-size: 28px;
+      color: #c7d8e8;
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: 18px;
+      max-width: 620px;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 13px 24px;
+      border-radius: 8px;
+      font-weight: 700;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    .primary-btn {
+      background: var(--primary);
+      color: #061111;
+    }
+
+    .primary-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(41, 163, 163, 0.25);
+    }
+
+    .outline-btn {
+      border: 1px solid var(--primary);
+      color: var(--primary);
+    }
+
+    .outline-btn:hover {
+      background: var(--primary);
+      color: #061111;
+    }
+
+    /* PROFILE CARD */
+    .profile-card {
+      width: 330px;
+      min-width: 280px;
+      padding: 35px;
+      border-radius: 25px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      backdrop-filter: blur(15px);
+      text-align: center;
+      box-shadow: 0 25px 70px rgba(0, 0, 0, 0.3);
+    }
+
+    .avatar {
+      width: 150px;
+      height:
+```
+
